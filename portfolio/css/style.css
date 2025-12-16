@@ -1,0 +1,189 @@
+/* ========================
+   Global Styles
+======================== */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-main);
+  background: var(--light);
+}
+
+/* ========================
+   Header & Navbar
+======================== */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(90deg, #0f172a, #1e293b);
+  padding: 20px 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1 {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+nav ul li a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Hover underline */
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #2563eb;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* ========================
+   Section Visibility
+======================== */
+
+.page-section {
+  display: none;
+  flex: 1;
+}
+
+.page-section.active {
+  display: block;
+}
+/* ========================
+   Home / Welcome Section
+======================== */
+
+.home-section {
+  /* min-height: 80vh; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #ffffff;
+}
+
+.home-container {
+  text-align: center;
+  max-width: 700px;
+  padding: 40px;
+}
+
+.home-container h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.home-container p {
+  font-size: 18px;
+  color: #cbd5f5;
+  margin-bottom: 30px;
+}
+
+.home-container button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-container button:hover {
+  background: #1d4ed8;
+  transform: translateY(-3px);
+}
+
+/* ========================
+   About Section
+======================== */
+
+.about-section {
+  background: #f8fafc;
+  padding: 80px 20px;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ========================
+   Skills Section
+======================== */
+
+#skills {
+  background: #0f172a;
+  color: #fff;
+  padding: 60px 40px;
+  border-radius: 20px;
+  max-width: 900px;
+  margin: 60px auto;
+}
+
+.skill {
+  background: #1e293b;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.skill:hover {
+  background: #2563eb;
+  transform: translateY(-3px);
+}
+
+/* ========================
+   Footer
+======================== */
+
+.site-footer {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 15px 0;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+.site-footer p:hover {
+  color: #2563eb;
+}
