@@ -172,6 +172,74 @@ nav ul li a:hover::after {
   transform: translateY(-3px);
 }
 
+.project-card {
+  background: #ffffff;
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 {
+  color: #0f172a;
+  margin-bottom: 5px;
+}
+
+.project-type {
+  font-size: 14px;
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+.project-card ul {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.project-card ul li {
+  margin-bottom: 8px;
+}
+
+.tech-stack {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #374151;
+}
+.contact-section {
+  background: #f8fafc;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  margin-bottom: 15px;
+  color: #0f172a;
+}
+
+.contact-intro {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #475569;
+  font-size: 16px;
+}
+
+.contact-details p {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.contact-details a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+
 /* ========================
    Footer
 ======================== */
