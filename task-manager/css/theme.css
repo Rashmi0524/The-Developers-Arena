@@ -1,0 +1,54 @@
+/* DARK MODE */
+
+body.dark {
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #e5e7eb;
+}
+
+body.dark .app {
+  background: #020617;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+body.dark h1 {
+  color: #22c55e;
+}
+
+body.dark input[type="text"] {
+  background: #020617;
+  color: #e5e7eb;
+  border: 1px solid #334155;
+}
+
+body.dark .task {
+  background: #020617;
+  border-left-color: #22c55e;
+}
+
+body.dark .task.completed span {
+  color: #64748b;
+}
+
+body.dark .filters button {
+  background: #020617;
+  color: #a7f3d0;
+  border-color: #22c55e;
+}
+
+body.dark .filters button.active {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #020617;
+}
+
+body.dark #stats {
+  background: #020617;
+  color: #a7f3d0;
+}
+
+body.dark .progress-bar {
+  background: #334155;
+}
+
+body.dark .footer {
+  color: #9ca3af;
+}
